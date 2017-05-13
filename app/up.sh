@@ -5,5 +5,5 @@ if [ "$NODE_ENV" == "production" ]; then
   serve -s --port $PORT build
 else
   echo "Running in development mode"
-  ./node_modules/.bin/react-scripts start
+  node ./scripts/start.js
 fi
