@@ -1,0 +1,14 @@
+version: '2'
+services:
+  node:
+    image:
+      $NAME:$VERSION
+    build:
+      context: ../app
+      dockerfile: Dockerfile
+      args:
+        NODE_ENV: production
+    ports:
+      - "$PORT:$PORT"
+    environment:
+      - PORT=$PORT

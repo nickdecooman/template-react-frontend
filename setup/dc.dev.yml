@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  node:
+    extends:
+      file: dc.base.yml
+      service: node
+    image:
+      $NAME:$VERSION.dev
+    build:
+      args:
+        NODE_ENV: develop
+    volumes:
+      - ../app/src:/app/src
+      - ../app/__tests__:/app/__tests__
+      - ../app/__mocks__:/app/__mocks__

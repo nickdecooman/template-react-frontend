@@ -1,0 +1,6 @@
+version: '2'
+services:
+  node:
+    extends:
+      file: dc.base.yml
+      service: node
