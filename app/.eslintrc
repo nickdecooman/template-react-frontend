@@ -9,12 +9,38 @@
     "flowtype",
     "prettier"
   ],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "generators": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  settings: {
+    "import/ignore": ["node_modules"],
+    "import/extensions": [".js"],
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".json"]
+      }
+    }
+  },
   "rules": {
     "prettier/prettier": ["error", {
-      "trailingComma": "all",
+      "trailingComma": "es5",
       "bracketSpacing": true,
       "singleQuote": true,
     }],
+    "react/jsx-filename-extension": 0,
     "no-console": 0
   }
 }

@@ -5,5 +5,5 @@ if [ "$NODE_ENV" == "production" ]; then
   serve -s --port $PORT build
 else
   echo "Running in development mode"
-  node ./scripts/start.js
+  yarn run start
 fi
