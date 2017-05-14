@@ -1,4 +1,7 @@
 [ignore]
+.*/build/.*
+.*/node_modules/.*
+.*/scripts/.*
 
 [include]
 

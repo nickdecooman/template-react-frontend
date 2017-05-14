@@ -2,6 +2,7 @@
   "parser": "babel-eslint",
   "extends": [
     "airbnb",
+    "airbnb-flow",
     "prettier",
     "prettier/flowtype",
   ],
