@@ -1,14 +1,16 @@
 {
   "parser": "babel-eslint",
   "extends": [
+    "plugin:jest/recommended",
+    "plugin:flowtype/recommended",
     "airbnb",
-    "airbnb-flow",
     "prettier",
     "prettier/flowtype",
   ],
   "plugins": [
     "flowtype",
-    "prettier"
+    "prettier",
+    "jest"
   ],
   "env": {
     "browser": true,
@@ -21,7 +23,7 @@
     "ecmaVersion": 6,
     "sourceType": "module",
     "ecmaFeatures": {
-      "jsx": true,
+      "jsx": false,
       "generators": true,
       "experimentalObjectRestSpread": true
     }
