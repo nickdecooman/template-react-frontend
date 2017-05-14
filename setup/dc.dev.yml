@@ -14,3 +14,4 @@ services:
       - ../app/src:/app/src
       - ../app/__tests__:/app/__tests__
       - ../app/__mocks__:/app/__mocks__
+    tty: true

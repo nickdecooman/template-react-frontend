@@ -12,3 +12,4 @@ services:
       - "$PORT:$PORT"
     environment:
       - PORT=$PORT
+      - FORCE_COLOR=1
