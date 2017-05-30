@@ -1,4 +1,4 @@
-'use strict';
+/* eslint import/no-extraneous-dependencies: 0 */
 
 // Do this as the first thing so that any code reading it knows the right env.
 process.env.BABEL_ENV = 'development';
@@ -68,7 +68,8 @@ choosePort(HOST, DEFAULT_PORT)
     // Launch WebpackDevServer.
     devServer.listen(port, HOST, err => {
       if (err) {
-        return console.log(err);
+        console.log(err);
+        return;
       }
       if (isInteractive) {
         clearConsole();
@@ -77,8 +78,8 @@ choosePort(HOST, DEFAULT_PORT)
       openBrowser(urls.localUrlForBrowser);
     });
 
-    ['SIGINT', 'SIGTERM'].forEach(function(sig) {
-      process.on(sig, function() {
+    ['SIGINT', 'SIGTERM'].forEach(sig => {
+      process.on(sig, () => {
         devServer.close();
         process.exit();
       });
