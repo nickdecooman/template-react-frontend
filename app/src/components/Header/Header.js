@@ -2,15 +2,15 @@
 
 import React from 'react';
 import logo from './logo.svg';
-// import './App.css';
+import styles from './styles.css';
 
 type Props = {
   name: string,
 };
 
 const Header = ({ name }: Props) => (
-  <div className="App-header">
-    <img src={logo} className="App-logo" alt="logo" />
+  <div className={styles.header}>
+    <img src={logo} className={styles.logo} alt="logo" />
     <h2>Welcome {name}!</h2>
   </div>
 );

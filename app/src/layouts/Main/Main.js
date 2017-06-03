@@ -2,10 +2,10 @@
 
 import React from 'react';
 import Header from '../../components/Header';
-import './App.css';
+import styles from './styles.css';
 
 const Main = (props: { children: any }) => (
-  <div className="App">
+  <div className={styles.container}>
     <Header name="World" />
     {props.children}
   </div>
