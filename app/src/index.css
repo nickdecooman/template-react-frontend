@@ -1,8 +1,14 @@
+@fontface {
+  font-family: 'Rubik', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Rubik:300')
+}
+
 html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Rubik', sans-serif;
 }
 
 [data-reactroot] {
