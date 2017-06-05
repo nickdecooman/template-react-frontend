@@ -8,7 +8,7 @@ import { Title } from '../Text';
 const Header = () => (
   <div className={styles.header}>
     <img src={logo} className={styles.logo} alt="logo" />
-    <Title>Template React Frontend</Title>
+    <Title className={styles.title}>Template React Frontend</Title>
   </div>
 );
 

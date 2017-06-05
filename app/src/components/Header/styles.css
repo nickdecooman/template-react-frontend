@@ -5,11 +5,16 @@
   color: white;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .logo {
   animation: logo-spin infinite 20s linear;
-  height: 80px;
+  height: 60px;
+}
+
+.title {
+  margin-top: 0.2em;
 }
 
 @keyframes logo-spin {

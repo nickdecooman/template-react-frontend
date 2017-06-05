@@ -7,7 +7,7 @@ const defaultStyle = {
 };
 
 const Text = (props: { children: string, style: any }) => (
-  <span style={Object.assign({}, defaultStyle, props.style)}>
+  <span style={Object.assign({}, defaultStyle, props.style)} {...props}>
     {props.children}
   </span>
 );
