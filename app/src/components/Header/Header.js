@@ -3,15 +3,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import styles from './styles.css';
+import { Title } from '../Text';
 
-type Props = {
-  name: string,
-};
-
-const Header = ({ name }: Props) => (
+const Header = () => (
   <div className={styles.header}>
     <img src={logo} className={styles.logo} alt="logo" />
-    <h2>Welcome {name}!</h2>
+    <Title>Template-React-Frontend</Title>
   </div>
 );
 

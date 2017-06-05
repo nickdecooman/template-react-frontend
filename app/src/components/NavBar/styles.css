@@ -1,0 +1,9 @@
+.navBar {
+  list-style: none;
+  background: #AEAEAE;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+  padding: 10px;
+}
