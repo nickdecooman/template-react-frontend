@@ -7,7 +7,7 @@ import styles from './styles.css';
 const NavBar = () => (
   <ul className={styles.navBar}>
     <li><Link to="/">Home</Link></li>
-    <li><Link to="/other">Other</Link></li>
+    <li><Link to="/about">About</Link></li>
   </ul>
 );
 
