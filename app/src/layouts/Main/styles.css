@@ -5,7 +5,8 @@
 }
 
 .content {
-  padding-top: 1em;
+  padding-top: 2em;
+  background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
