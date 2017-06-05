@@ -5,6 +5,7 @@
 [libs]
 
 [options]
+module.name_mapper='^.*\.css$' -> 'css-module-flow'
 module.file_ext=.css
 module.file_ext=.js
 module.file_ext=.jsx
