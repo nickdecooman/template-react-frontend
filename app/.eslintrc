@@ -3,7 +3,7 @@
   "extends": [
     "plugin:jest/recommended",
     "plugin:flowtype/recommended",
-    "airbnb",
+    "react-app",
     "prettier",
     "prettier/flowtype",
   ],
@@ -43,7 +43,6 @@
       "bracketSpacing": true,
       "singleQuote": true,
     }],
-    "react/jsx-filename-extension": 0,
     "no-console": 0
   }
 }
