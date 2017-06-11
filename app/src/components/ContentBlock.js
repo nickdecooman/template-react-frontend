@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import { Title, Text } from '../Text';
+import { Title, Text } from './Common';
 
 type Props = {
   title: string,
