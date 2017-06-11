@@ -26,32 +26,43 @@ function mergeStyles(styleA, styleB) {
   return Object.assign({}, styleA._definition, styleB._definition);
 }
 
-export function getStyleSheet(key, localStyleSheet, injectedStyleSheet) {
-  const localStyle = localStyleSheet[key];
-  let style = localStyle;
+function createStyleSheetWithKey(key, definitions) {
   const result = {};
-  if (isValidStyleSheet(injectedStyleSheet, key)) {
-    const injectedStyle = injectedStyleSheet[key];
-    style = mergeStyles(localStyle, injectedStyle);
-    result[key] = style;
-    return StyleSheet.create(result);
-  }
-
-  result[key] = style;
-  return result;
+  result[key] = definitions;
+  return StyleSheet.create(result);
 }
 
-export function getStyle(key, localStyleSheet, injectedStyleSheet) {
-  const localStyle = localStyleSheet[key];
-  if (!isValidStyleSheet(injectedStyleSheet, key)) {
-    return localStyle;
-  }
-  const injectedStyle = injectedStyleSheet[key];
-  const mergedStyle = mergeStyles(localStyle, injectedStyle);
-  const result = {};
-  result[key] = mergedStyle;
-  const styleSheet = StyleSheet.create(result);
+function createStyle(key, definitions) {
+  const styleSheet = createStyleSheetWithKey(key, definitions);
   return styleSheet[key];
+}
+
+export function getStyleSheet(key, styleSheetA, styleSheetB) {
+  if (
+    isValidStyleSheet(styleSheetA, key) &&
+    isValidStyleSheet(styleSheetB, key)
+  ) {
+    const mergedStyle = mergeStyles(styleSheetA[key], styleSheetB[key]);
+    return createStyleSheetWithKey(key, mergedStyle);
+  } else if (isValidStyleSheet(styleSheetA, key)) {
+    const result = {};
+    result[key] = styleSheetA[key];
+    return result;
+  }
+  return createStyleSheetWithKey(key, {});
+}
+
+export function getStyle(key, styleSheetA, styleSheetB) {
+  if (
+    isValidStyleSheet(styleSheetA, key) &&
+    isValidStyleSheet(styleSheetB, key)
+  ) {
+    const mergedStyle = mergeStyles(styleSheetA[key], styleSheetB[key]);
+    return createStyle(key, mergedStyle);
+  } else if (isValidStyleSheet(styleSheetA, key)) {
+    return styleSheetA[key];
+  }
+  return createStyle(key, {});
 }
 
 export { css, StyleSheet };
