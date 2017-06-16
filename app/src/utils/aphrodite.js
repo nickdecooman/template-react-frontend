@@ -3,17 +3,21 @@ import { StyleSheet, css } from 'aphrodite/no-important';
 /* eslint no-underscore-dangle: 0 */
 
 function isValidStyleSheet(styleSheet, key) {
-  return !(styleSheet === null ||
+  return !(
+    styleSheet === null ||
     styleSheet === undefined ||
     styleSheet[key] === null ||
-    styleSheet[key] === undefined);
+    styleSheet[key] === undefined
+  );
 }
 
 function isValidStyle(style) {
-  return !(style === null ||
+  return !(
+    style === null ||
     style === undefined ||
     style._definition === null ||
-    style._definition === undefined);
+    style._definition === undefined
+  );
 }
 
 function mergeStyles(styleA, styleB) {

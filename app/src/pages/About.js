@@ -10,12 +10,11 @@ const contentBlockStyles = StyleSheet.create({
   },
 });
 
-const About = () => (
+const About = () =>
   <ContentBlock
     title="About"
     body="This page contains info about me"
     styleSheet={contentBlockStyles}
-  />
-);
+  />;
 
 export default About;

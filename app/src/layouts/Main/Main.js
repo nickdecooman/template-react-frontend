@@ -33,15 +33,14 @@ const navBarStyles = StyleSheet.create({
   },
 });
 
-const Main = (props: { children?: any }) => (
+const Main = (props: { children?: any }) =>
   <div className={css(styles.container)}>
     <Header title="Template React Frontend" logo={logo} />
     <NavBar styleSheet={navBarStyles} />
     <div className={css(styles.content)}>
       {props.children}
     </div>
-  </div>
-);
+  </div>;
 
 Main.defaultProps = {
   children: null,

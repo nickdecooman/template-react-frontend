@@ -6,7 +6,7 @@ import MainLayout from './layouts/Main';
 import Home from './pages/Home';
 import About from './pages/About';
 
-const Router = () => (
+const Router = () =>
   <BrowserRouter>
     <MainLayout>
       <Switch>
@@ -14,7 +14,6 @@ const Router = () => (
         <Route path="/about" component={About} />
       </Switch>
     </MainLayout>
-  </BrowserRouter>
-);
+  </BrowserRouter>;
 
 export default Router;
