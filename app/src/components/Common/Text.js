@@ -1,7 +1,8 @@
 // @flow
 
 import React from 'react';
-import { getStyle, StyleSheet, css } from '../../utils/aphrodite';
+import { StyleSheet, css } from 'aphrodite/no-important';
+import { getStyle } from 'aphrodite-helpers';
 
 type Props = {
   children: string,

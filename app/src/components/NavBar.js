@@ -3,7 +3,8 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { getStyle, StyleSheet, css } from '../utils/aphrodite';
+import { StyleSheet, css } from 'aphrodite/no-important';
+import { getStyle } from 'aphrodite-helpers';
 import { TEAL_500, WHITE } from '../styles/colors';
 
 type Props = {

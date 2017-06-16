@@ -2,7 +2,7 @@
 
 import React from 'react';
 import ContentBlock from '../components/ContentBlock';
-import { StyleSheet } from '../utils/aphrodite';
+import { StyleSheet } from 'aphrodite/no-important';
 
 const contentBlockStyles = StyleSheet.create({
   title: {

@@ -4,7 +4,8 @@
 import React from 'react';
 import { Title } from './Common';
 import { TEAL_700, WHITE } from '../styles/colors';
-import { StyleSheet, css, getStyle, getStyleSheet } from '../utils/aphrodite';
+import { StyleSheet, css } from 'aphrodite/no-important';
+import { getStyle, getStyleSheet } from 'aphrodite-helpers';
 
 type Props = {
   title: string,
