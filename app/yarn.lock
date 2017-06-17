@@ -135,9 +135,9 @@ anymatch@^1.3.0:
     arrify "^1.0.0"
     micromatch "^2.1.5"
 
-aphrodite-helpers@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/aphrodite-helpers/-/aphrodite-helpers-0.0.1.tgz#974e37ede9a20dea8961a9d25fdbcde5f65420a3"
+aphrodite-helpers@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/aphrodite-helpers/-/aphrodite-helpers-0.0.2.tgz#acc930afc36aadb5ebb414187df3754657dc84e0"
 
 aphrodite@^1.2.1:
   version "1.2.1"
