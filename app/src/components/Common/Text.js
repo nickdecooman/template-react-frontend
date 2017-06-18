@@ -3,11 +3,12 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
 import { getStyle } from 'aphrodite-helpers';
+import { type SheetDefinition } from 'aphrodite/no-important';
 
 type Props = {
   children: string,
   styleSheet?: {
-    text?: {},
+    text?: SheetDefinition,
   },
 };
 

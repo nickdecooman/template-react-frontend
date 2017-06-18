@@ -1,16 +1,15 @@
 // @flow
-/* eslint react/no-unused-prop-types: 0 */
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { StyleSheet, css } from 'aphrodite/no-important';
+import { StyleSheet, css, type SheetDefinition } from 'aphrodite/no-important';
 import { getStyle } from 'aphrodite-helpers';
 import { TEAL_500, WHITE } from '../styles/colors';
 
 type Props = {
   styleSheet?: {
-    navBar?: {},
-    link?: {},
+    navBar?: SheetDefinition,
+    link?: SheetDefinition,
   },
 };
 

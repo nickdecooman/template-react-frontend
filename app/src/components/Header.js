@@ -1,19 +1,19 @@
 // @flow
-/* eslint react/no-unused-prop-types: 0 */
 
 import React from 'react';
 import { Title } from './Common';
 import { TEAL_700, WHITE } from '../styles/colors';
 import { StyleSheet, css } from 'aphrodite/no-important';
+import { type SheetDefinition } from 'aphrodite/no-important';
 import { getStyle, getStyleSheet } from 'aphrodite-helpers';
 
 type Props = {
   title: string,
   logo: string,
   styleSheet?: {
-    header?: {},
-    logo?: {},
-    title: {},
+    header?: SheetDefinition,
+    logo?: SheetDefinition,
+    title?: SheetDefinition,
   },
 };
 

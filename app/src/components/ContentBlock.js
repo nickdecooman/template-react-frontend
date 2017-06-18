@@ -3,13 +3,14 @@
 import React from 'react';
 import { Title, Text } from './Common';
 import { getStyleSheet } from 'aphrodite-helpers';
+import { type SheetDefinition } from 'aphrodite/no-important';
 
 type Props = {
   title: string,
   body: string,
   styleSheet?: {
-    title: {},
-    body: {},
+    title?: SheetDefinition,
+    body?: SheetDefinition,
   },
 };
 

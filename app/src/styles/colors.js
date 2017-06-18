@@ -1,3 +1,5 @@
+// @flow
+
 export const WHITE = '#ffffff';
 export const BLACK = '#212121';
 export const TEAL_700 = '#00796B';
