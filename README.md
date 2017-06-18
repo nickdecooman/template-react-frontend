@@ -11,8 +11,10 @@ Template project for a modern React-based frontend app 💃
 * Uses Webpack, Babel, ESLint, Flow and Prettier
 * Folder structure based on components, layouts and pages
 * Fully CSS-in-JS driven using [Aphrodite](https://github.com/Khan/aphrodite), or [CSS modules](https://github.com/css-modules/css-modules) if needed
+* Uses [Aphrodite-helpers](https://github.com/nickdecooman/aphrodite-helpers) to make components more reusable
 * React-Router with two example pages
 * Jest for unit testing
+* 100% Flow coverage
 
 ## Install
 
