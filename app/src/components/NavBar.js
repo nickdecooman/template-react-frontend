@@ -2,8 +2,12 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { StyleSheet, css, type SheetDefinition } from 'aphrodite/no-important';
-import { getStyle } from 'aphrodite-helpers';
+import {
+  StyleSheet,
+  css,
+  type SheetDefinition,
+  getStyle,
+} from '../utils/aphrodite';
 import { TEAL_500, WHITE } from '../styles/colors';
 
 type Props = {

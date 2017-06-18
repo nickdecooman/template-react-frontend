@@ -2,8 +2,7 @@
 
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
-import { getStyle } from 'aphrodite-helpers';
-import { type SheetDefinition } from 'aphrodite/no-important';
+import { type SheetDefinition, getStyle } from '../../utils/aphrodite';
 
 type Props = {
   children: string,

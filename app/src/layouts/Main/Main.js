@@ -4,7 +4,7 @@ import React from 'react';
 import Header from '../../components/Header';
 import NavBar from '../../components/NavBar';
 import logo from './logo.svg';
-import { StyleSheet, css } from 'aphrodite/no-important';
+import { StyleSheet, css } from '../../utils/aphrodite';
 import { BLACK, AMBER_500 } from '../../styles/colors';
 
 const styles = StyleSheet.create({

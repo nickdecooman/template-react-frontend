@@ -2,8 +2,7 @@
 
 import React from 'react';
 import { Title, Text } from './Common';
-import { getStyleSheet } from 'aphrodite-helpers';
-import { type SheetDefinition } from 'aphrodite/no-important';
+import { type SheetDefinition, getStyleSheet } from '../utils/aphrodite';
 
 type Props = {
   title: string,
