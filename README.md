@@ -1,6 +1,8 @@
 # template-react-frontend
 Template project for a modern React-based frontend app 💃
 
+<img src="https://cdn.pbrd.co/images/6GJxp7tQ.gif" width="450">
+
 ## Features
 
 * Docker driven
