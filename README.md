@@ -1,6 +1,8 @@
 # template-react-frontend
 Template project for a modern React-based frontend app 💃
 
+<img src="https://cdn.pbrd.co/images/6GJxp7tQ.gif" width="450">
+
 ## Features
 
 * Docker driven
@@ -11,6 +13,14 @@ Template project for a modern React-based frontend app 💃
 * Fully CSS-in-JS driven using [Aphrodite](https://github.com/Khan/aphrodite), or [CSS modules](https://github.com/css-modules/css-modules) if needed
 * React-Router with two example pages
 * Jest for unit testing
+
+## Install
+
+```
+git clone git@github.com:nickdecooman/template-react-frontend.git
+cd template-react-frontend
+chmod -R u+x ./setup
+```
 
 ## Usage
 
