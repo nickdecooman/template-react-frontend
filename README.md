@@ -12,6 +12,14 @@ Template project for a modern React-based frontend app 💃
 * React-Router with two example pages
 * Jest for unit testing
 
+## Install
+
+```
+git clone git@github.com:nickdecooman/template-react-frontend.git
+cd template-react-frontend
+chmod -R u+x ./setup
+```
+
 ## Usage
 
 ### Development
