@@ -29,24 +29,24 @@ chmod -R u+x ./setup
 ### Development
 
 ```
-yarn build-dev
-yarn up-dev
+yarn run build-dev
+yarn run up-dev
 ```
 
 ### Production
 
 ```
-yarn build-prod
-yarn up-prod
+yarn run build-prod
+yarn run up-prod
 ```
 
 ### Testing
 
-While running in development modus, you can run `yarn test` to start Jest in watch mode.
+While running in development modus, you can run `yarn run test` to start Jest in watch mode.
 
 ### Clean
 
-`yarn clean` will propely stop and remove all containers created within the scope of this project.
+`yarn run clean` will propely stop and remove all containers created within the scope of this project.
 
 
 ## Backend?
