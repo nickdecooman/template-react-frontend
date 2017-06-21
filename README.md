@@ -18,10 +18,10 @@ Template project for a modern React-based frontend app 💃
 
 ## Install
 
+Replace `hello_world` with the folder name of your project:
+
 ```
-git clone git@github.com:nickdecooman/template-react-frontend.git
-cd template-react-frontend
-chmod -R u+x ./setup
+PROJECT_FOLDER=hello_world bash -c 'git clone -o template --single-branch git@github.com:nickdecooman/template-react-frontend.git $PROJECT_FOLDER && cd $PROJECT_FOLDER && chmod u+x init.sh && ./init.sh'
 ```
 
 ## Usage
