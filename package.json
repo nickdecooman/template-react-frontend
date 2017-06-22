@@ -1,6 +1,6 @@
 {
   "name": "template-react-frontend",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "port": "4000",
   "scripts": {
     "build-dev": "setup/build.sh dev",
