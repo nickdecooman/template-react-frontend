@@ -42,6 +42,7 @@
       "trailingComma": "es5",
       "bracketSpacing": true,
       "singleQuote": true,
+      "jsxBracketSameLine": true
     }],
     "no-console": 0
   }
