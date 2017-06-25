@@ -2,8 +2,9 @@
   "name": "template-react-frontend",
   "private": true,
   "dependencies": {
+    "@material/button": "^0.3.7",
     "aphrodite": "^1.2.1",
-    "aphrodite-helpers": "^0.0.2",
+    "aphrodite-helpers": "^0.0.3",
     "classnames": "^2.2.5",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
