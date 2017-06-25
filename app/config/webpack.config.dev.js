@@ -20,6 +20,26 @@ const publicUrl = '';
 // Get environment variables to inject into our app.
 const env = getClientEnvironment(publicUrl);
 
+// "postcss" loader applies autoprefixer to our CSS.
+const postCSSLoader = {
+  loader: require.resolve('postcss-loader'),
+  options: {
+    ident: 'postcss', // https://webpack.js.org/guides/migrating/#complex-options
+    plugins: () => [
+      require('postcss-flexbugs-fixes'),
+      autoprefixer({
+        browsers: [
+          '>1%',
+          'last 4 versions',
+          'Firefox ESR',
+          'not ie < 9', // React doesn't support IE8 anyway
+        ],
+        flexbox: 'no-2009',
+      }),
+    ],
+  },
+};
+
 // This is the development configuration.
 // It is focused on developer experience and fast rebuilds.
 // The production configuration is different and lives in a separate file.
@@ -173,7 +193,16 @@ module.exports = {
       // In production, we use a plugin to extract that CSS to a file, but
       // in development "style" loader enables hot editing of CSS.
       {
+        test: /global.css$/,
+        use: [
+          require.resolve('style-loader'),
+          require.resolve('css-loader'),
+          postCSSLoader,
+        ],
+      },
+      {
         test: /\.css$/,
+        exclude: /global.css$/,
         use: [
           require.resolve('style-loader'),
           {
@@ -184,24 +213,7 @@ module.exports = {
               localIdentName: '[name]__[local]___[hash:base64:5]',
             },
           },
-          {
-            loader: require.resolve('postcss-loader'),
-            options: {
-              ident: 'postcss', // https://webpack.js.org/guides/migrating/#complex-options
-              plugins: () => [
-                require('postcss-flexbugs-fixes'),
-                autoprefixer({
-                  browsers: [
-                    '>1%',
-                    'last 4 versions',
-                    'Firefox ESR',
-                    'not ie < 9', // React doesn't support IE8 anyway
-                  ],
-                  flexbox: 'no-2009',
-                }),
-              ],
-            },
-          },
+          postCSSLoader,
         ],
       },
       // ** STOP ** Are you adding a new loader?
