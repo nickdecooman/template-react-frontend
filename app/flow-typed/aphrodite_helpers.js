@@ -12,7 +12,7 @@ declare module 'aphrodite-helpers' {
   declare module.exports: {
     getStyle(
       key: string,
-      styleSheetA: SheetDefinitions,
+      styleSheetA?: SheetDefinitions,
       styleSheetB?: SheetDefinitions
     ): StyleDefinition,
     getStyleSheet(
