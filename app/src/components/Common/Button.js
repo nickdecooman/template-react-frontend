@@ -16,9 +16,7 @@ const Button = ({ label, onClick, styleSheet }: Props) => {
   const buttonStyle = getStyle('button', styleSheet);
   return (
     <button
-      className={`mdc-button mdc-button--raised mdc-button--accent ${css(
-        buttonStyle
-      )}`}
+      className={`mdc-button mdc-button--raised ${css(buttonStyle)}`}
       onClick={onClick}>
       {label}
     </button>
