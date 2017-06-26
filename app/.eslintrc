@@ -38,7 +38,7 @@
     }
   },
   "rules": {
-    "prettier/prettier": ["error", {
+    "prettier/prettier": ["warn", {
       "trailingComma": "es5",
       "bracketSpacing": true,
       "singleQuote": true,
