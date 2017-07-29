@@ -1,7 +1,6 @@
 // @flow
 
 import React from 'react';
-import { Title } from './Common';
 import { TEAL_700, WHITE } from '../styles/colors';
 import {
   StyleSheet,
@@ -10,6 +9,7 @@ import {
   getStyle,
   getStyleSheet,
 } from '../utils/aphrodite';
+import { Title } from './Common';
 
 type Props = {
   title: string,

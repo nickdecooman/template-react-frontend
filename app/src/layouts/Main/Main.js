@@ -3,9 +3,9 @@
 import React from 'react';
 import Header from '../../components/Header';
 import NavBar from '../../components/NavBar';
-import logo from './logo.svg';
 import { StyleSheet, css } from '../../utils/aphrodite';
 import { BLACK, AMBER_500 } from '../../styles/colors';
+import logo from './logo.svg';
 
 const styles = StyleSheet.create({
   container: {
