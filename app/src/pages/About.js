@@ -24,6 +24,8 @@ const buttonStyles = StyleSheet.create({
   },
 });
 
+const onButtonClick = () => console.log('Hello World');
+
 const About = () =>
   <div>
     <ContentBlock
@@ -33,7 +35,7 @@ const About = () =>
     />
     <Button
       label="Contact me"
-      onClick={() => console.log('Hello World')}
+      onClick={onButtonClick}
       styleSheet={buttonStyles}
     />
   </div>;
