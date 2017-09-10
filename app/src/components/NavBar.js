@@ -41,10 +41,14 @@ const NavBar = ({ styleSheet }: Props) => {
   return (
     <ul className={css(navBarStyle)}>
       <li>
-        <Link to="/" className={css(linkStyle)}>Home</Link>
+        <Link to="/" className={css(linkStyle)}>
+          Home
+        </Link>
       </li>
       <li>
-        <Link to="/about" className={css(linkStyle)}>About</Link>
+        <Link to="/about" className={css(linkStyle)}>
+          About
+        </Link>
       </li>
     </ul>
   );

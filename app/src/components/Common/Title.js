@@ -19,11 +19,7 @@ const styles = StyleSheet.create({
 
 const Title = ({ children, styleSheet }: Props) => {
   const textStyle = getStyle('title', styles, styleSheet);
-  return (
-    <span className={css(textStyle)}>
-      {children}
-    </span>
-  );
+  return <span className={css(textStyle)}>{children}</span>;
 };
 
 Title.defaultProps = {

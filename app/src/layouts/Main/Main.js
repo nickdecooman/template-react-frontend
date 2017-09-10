@@ -1,6 +1,6 @@
 // @flow
 
-import React from 'react';
+import * as React from 'react';
 import Header from '../../components/Header';
 import NavBar from '../../components/NavBar';
 import { StyleSheet, css } from '../../utils/aphrodite';
@@ -33,14 +33,13 @@ const navBarStyles = StyleSheet.create({
   },
 });
 
-const Main = (props: { children?: any }) =>
+const Main = (props: { children?: React.Node }) => (
   <div className={css(styles.container)}>
-    <Header title="Template React Frontend" logo={logo} />
+    <Header title="Template React Frontend" logo={logo} styleSheet={{}} />
     <NavBar styleSheet={navBarStyles} />
-    <div className={css(styles.content)}>
-      {props.children}
-    </div>
-  </div>;
+    <div className={css(styles.content)}>{props.children}</div>
+  </div>
+);
 
 Main.defaultProps = {
   children: null,
