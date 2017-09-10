@@ -15,9 +15,7 @@ type Props = {
 const Button = ({ label, onClick, styleSheet }: Props) => {
   const buttonStyle = getStyle('button', styleSheet);
   return (
-    <button
-      className={`mdc-button mdc-button--raised ${css(buttonStyle)}`}
-      onClick={onClick}>
+    <button className={css(buttonStyle)} onClick={onClick}>
       {label}
     </button>
   );
